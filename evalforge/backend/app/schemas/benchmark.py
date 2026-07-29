@@ -7,3 +7,12 @@ class BenchMark(BaseModel):
 
 class BenchMark(BaseModel):
     name: str
+    description: str
+    version: str
+    tasks: list[BenchMark]
+
+class BenchMark(BaseModel):
+    name: str
+    description: str
+    version: str
+    task_count: int = Field(ge = 0)
