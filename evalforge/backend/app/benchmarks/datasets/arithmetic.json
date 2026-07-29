@@ -1,0 +1,22 @@
+{
+    "name": "basic-arithmetic",
+    "description": "Simple arithmetic quesiton",
+    "version": "1.0",
+    "tasks": [
+        {
+            "id": "math-001",
+            "prompt": "What is 2+2? Return only the value",
+            "expected_answer": "4"
+        },
+        {
+            "id": "math-002",
+            "prompt": "What is 20*20? Return only the value",
+            "expected_answer": "400"           
+        },
+        {
+            "id": "math-003",
+            "prompt": "What is 100/10? Return only the value",
+            "expected_answer": "10"           
+        }
+    ]
+}
