@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 
-class BenchMark(BaseModel):
+class BenchMarkTask(BaseModel):
     id: str
     prompt: str
     expected_answer: str
@@ -11,7 +11,7 @@ class BenchMark(BaseModel):
     version: str
     tasks: list[BenchMark]
 
-class BenchMark(BaseModel):
+class BenchMarkSummary(BaseModel):
     name: str
     description: str
     version: str
