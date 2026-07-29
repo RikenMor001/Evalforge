@@ -11,3 +11,8 @@ def load_benchmark(filename: str) -> BenchMark:
         raise FileNotFoundError(
             f"Benchmark '{filename}' was not found"
         )
+    
+    with benchmark_path.open("r", encoding="utf-8") as file:
+        benchmark_data = json.load(file)
+
+    return BenchMark.model_validate(benchmark_data)
