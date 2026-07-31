@@ -5,17 +5,17 @@
     "tasks": [
         {
             "id": "math-001",
-            "prompt": "What is 2+2? Return only the value",
+            "prompt": "What is 2+2? the answer is",
             "expected_answer": "4"
         },
         {
             "id": "math-002",
-            "prompt": "What is 20*20? Return only the value",
+            "prompt": "What is 20*20? the answer is",
             "expected_answer": "400"           
         },
         {
             "id": "math-003",
-            "prompt": "What is 100/10? Return only the value",
+            "prompt": "What is 100/10? the answer is",
             "expected_answer": "10"           
         }
     ]

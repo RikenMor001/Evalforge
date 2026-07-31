@@ -9,7 +9,7 @@ class BenchMark(BaseModel):
     name: str
     description: str
     version: str
-    tasks: list[BenchMark]
+    tasks: list[BenchMarkTask]
 
 class BenchMarkSummary(BaseModel):
     name: str
