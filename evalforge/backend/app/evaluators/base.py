@@ -11,7 +11,7 @@ class BaseEvaluator(ABC):
     @abstractmethod
     def evaluate(
         self, 
-        prediction: str,
-        expected_output: str
+        expected_output: str,
+        actual_output: str
     ) -> EvaluationScore:
         pass

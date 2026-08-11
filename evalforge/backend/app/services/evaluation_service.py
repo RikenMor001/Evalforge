@@ -13,4 +13,24 @@ def run_evalutaion(
 
     for case in benchmark.cases:
 
+        # Get the prompt from benchmark
         prompt = case.prompt
+
+        # Run the prompt through the model
+        model_output = runner.run(prompt)
+
+        # Evaluate the model after running
+        evaluation = evaluator.evaluate(
+            expected_output=case.expected_output,
+            actual_output = model_output
+        )
+
+        # Store the result and return it 
+        results[case.id] = {
+            "prompt": prompt,
+            "expected_output": case.expected_output,
+            "model-output": model_output,
+            "evaluator": evaluation
+        }
+
+    return results
