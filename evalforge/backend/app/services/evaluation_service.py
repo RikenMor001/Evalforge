@@ -10,3 +10,7 @@ def run_evalutaion(
     benchmark = load_benchmark(benchmark_filename)
 
     results = {}
+
+    for case in benchmark.cases:
+
+        prompt = case.prompt
